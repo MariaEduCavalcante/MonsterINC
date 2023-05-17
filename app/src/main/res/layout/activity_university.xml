@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Sully"
+    tools:context=".university">
+
+    <View
+        android:id="@+id/barra19"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#B48CFC"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgM10"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/barra19"
+        app:layout_constraintStart_toStartOf="@+id/barra19"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/m" />
+
+    <ImageButton
+        android:id="@+id/btncarteira5"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="355dp"
+        android:layout_marginTop="-56dp"
+        android:background="@color/roxo"
+        android:onClick="openID"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/barra19"
+        app:layout_constraintTop_toBottomOf="@+id/barra19"
+        app:srcCompat="@drawable/ic_baseline_assignment_ind_24" />
+
+    <TextView
+        android:id="@+id/TituloUni1"
+        android:layout_width="275dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/monsterfont"
+        android:text="@string/universidadeHome"
+        android:textColor="#006ED0"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra19" />
+
+    <TextView
+        android:id="@+id/TituloUni2"
+        android:layout_width="220dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/monsterfont"
+        android:text="@string/monstrosTit2"
+        android:textColor="#006ED0"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloUni1" />
+
+    <View
+        android:id="@+id/barra20"
+        android:layout_width="412dp"
+        android:layout_height="73dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/roxo"
+        android:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloCarteira"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton32"
+        android:layout_width="75dp"
+        android:layout_height="73dp"
+        android:backgroundTint="@color/roxo"
+        android:onClick="openUniversity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton30"
+        app:layout_constraintStart_toEndOf="@+id/imageButton28"
+        app:srcCompat="@drawable/ic_baseline_school_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton31"
+        android:layout_width="81dp"
+        android:layout_height="68dp"
+        android:background="@color/roxo"
+        android:onClick="openStory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton28"
+        app:layout_constraintStart_toEndOf="@+id/imageButton29"
+        app:srcCompat="@drawable/ic_baseline_auto_stories_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton28"
+        android:layout_width="78dp"
+        android:layout_height="72dp"
+        android:backgroundTint="@color/roxo"
+        android:onClick="openHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/barra20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton29"
+        android:layout_width="70dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/roxo"
+        android:onClick="openCharacter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton30"
+        android:layout_width="77dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/roxo"
+        android:onClick="openDoor"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icons8_porta_30" />
+
+    <TextView
+        android:id="@+id/txtFilme"
+        android:layout_width="401dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/sinopseUni"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloUni2" />
+
+    <TextView
+        android:id="@+id/txtTextoUni"
+        android:layout_width="401dp"
+        android:layout_height="86dp"
+        android:text="@string/universidade"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgUniver" />
+
+    <ImageView
+        android:id="@+id/imgUniver"
+        android:layout_width="378dp"
+        android:layout_height="189dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFilme"
+        app:srcCompat="@drawable/univers" />
+
+    <ImageButton
+        android:id="@+id/imageView26"
+        android:layout_width="364dp"
+        android:layout_height="164dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/Sully"
+        android:onClick="openLocalUniversity"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/barra20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/university" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/monsterfont"
+        android:text="@string/btnUni"
+        android:textColor="@color/titulo"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTextoUni" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
